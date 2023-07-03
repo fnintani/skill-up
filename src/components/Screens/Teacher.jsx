@@ -2,7 +2,7 @@ import React from 'react'
 
 function Teacher() {
   return (
-    <div className="section">Teacher</div>
+    <div className="section" id="teacher">Teacher</div>
   )
 }
 
