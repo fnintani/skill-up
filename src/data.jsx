@@ -74,7 +74,7 @@ export const courses = [
     title: "Belajar Bahasa Indonesia dan Inggris",
     rating: 4.9,
     participants: 500,
-    price: 100.0,
+    price: 100,
   },
   {
     id: 2,
@@ -83,7 +83,7 @@ export const courses = [
     title: "Belajar ilmu dasar komputer",
     rating: 4.8,
     participants: 700,
-    price: 50.0,
+    price: 50,
   },
   {
     id: 3,
@@ -92,7 +92,7 @@ export const courses = [
     title: "Belajar akuntansi untuk pemula dan menengah",
     rating: 4.9,
     participants: 300,
-    price: 100.0,
+    price: 100,
   },
   {
     id: 4,
@@ -101,7 +101,7 @@ export const courses = [
     title: "Belajar sejarah dunia lebih jauh",
     rating: 4.7,
     participants: 600,
-    price: 50.0,
+    price: 50,
   },
   {
     id: 5,
@@ -110,7 +110,7 @@ export const courses = [
     title: "Belajar fisika untuk pemula",
     rating: 4.9,
     participants: 500,
-    price: 50.0,
+    price: 50,
   },
   {
     id: 6,
@@ -119,7 +119,7 @@ export const courses = [
     title: "Belajar bahasa Jepang untuk pemula",
     rating: 4.9,
     participants: 500,
-    price: 75.0,
+    price: 75,
   },
   {
     id: 7,
@@ -128,7 +128,7 @@ export const courses = [
     title: "Belajar Kimia untuk pemula",
     rating: 4.9,
     participants: 500,
-    price: 75.0,
+    price: 75,
   },
   {
     id: 8,
@@ -137,7 +137,7 @@ export const courses = [
     title: "Belajar membuat aplikasi dengan JavaScript",
     rating: 4.9,
     participants: 500,
-    price: 100.0,
+    price: 100,
   },
 ];
 
