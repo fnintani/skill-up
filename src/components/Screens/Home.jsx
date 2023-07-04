@@ -23,7 +23,7 @@ function Home() {
             <button className="px-6 py-3 font-bold text-limeSecondary bg-blueMain rounded-lg mr-4 text-sm">
               Mulai sekarang
             </button>
-            <button className="px-6 py-3 sm:mt-3 font-bold border border-solid border-gray rounded-lg text-sm">
+            <button className="px-6 py-3 sm:mt-3 font-bold border-[3px] border-solid border-pinkAccent rounded-lg text-sm">
               Cari tahu lebih lanjut
             </button>
           </div>
@@ -31,20 +31,22 @@ function Home() {
         <div className="md:-w-[60%]">
           <img src={hero} alt="hero-image"></img>
         </div>
-        </div>
-        {/*logos */}
-        <div>
-          <p className="text-center text-xl">
-            Kami telah berkolaborasi dengan <span className="text-blueMain">100+ universitas di Indonesia</span>
-          </p>
-          <div className="flex justify-center items-center flex-wrap p-2 gap-6">
-            {logos.map((logo, index) => {
-              return <div key={index} className="w-[100px]">
-                <img src={logo} alt="logo"/>
+      </div>
+      {/*logos */}
+      <div>
+        <p className="text-center text-xl mb-2 ">
+          Kami telah berkolaborasi dengan{" "}
+          <span className="text-blueMain">100+ universitas di Indonesia</span>
+        </p>
+        <div className="flex justify-center items-center flex-wrap p-2 gap-8">
+          {logos.map((logo, index) => {
+            return (
+              <div key={index} className="md:w-[120px] w-[100px]">
+                <img src={logo} alt="logo" />
               </div>
-            })}
-          </div>
-        
+            );
+          })}
+        </div>
       </div>
     </div>
   );
