@@ -16,7 +16,7 @@ function Navbar() {
         <div className="uppercase font-bold text-xl tracking-wide text-blueMain">
           skill-up
         </div>
-        <div className="flex sm:flex hidden">
+        <div className="sm:flex hidden">
           {navLinks.map((links) => {
             return <NavLink key={links.id} {...links}></NavLink>;
           })}
@@ -29,7 +29,7 @@ function Navbar() {
             {navLinks.map((link) => {
               return <MobileNavLink key={link.id} {...link} setToggleNav={setToggleNav} />;
             })}
-            <HiX className="absolute right-12 top-12 text-3xl text-limeSecondary" onClick={(prev) => setToggleNav(!prev)}/>
+            <HiX className="cursor-pointer absolute right-12 top-12 text-3xl text-limeSecondary" onClick={(prev) => setToggleNav(!prev)}/>
           </div>
         )}
       </div>
