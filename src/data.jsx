@@ -147,17 +147,21 @@ export const accordions = [
   {
     id: 1,
     title: "Apa itu Skill Up?",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto sequi architecto magni blanditiis excepturi molestiae soluta alias molestias repellendus numquam. Nisi id quaerat hic animi, sit dolorum. Asperiores, sint deleniti!"
   },
   {
     id: 2,
     title: "Apa yang bisa dipelajari di Skill Up?",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto sequi architecto magni blanditiis excepturi molestiae soluta alias molestias repellendus numquam. sint deleniti!"
   },
   {
     id: 3,
     title: "Bagaimana cara saya bergabung?",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto sequi architecto magni blanditiis excepturi molestiae soluta alias molestias repellendus numqua Asperiores, sint deleniti!"
   },
   {
     id: 4,
     title: "Apa keuntungan menjadi member Skill up?",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto sequi architecto magni blanditiis excepturi molestiae soluta alias molestias repellendus numquam. Nisi id quaerat hic animi, sit dolorum. Asperiores, sint deleniti!Nisi id quaerat hic animi, sit dolorum. Asperiores "
   },
 ];
