@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { navLinks } from "./../../data";
 import { HiMenuAlt1, HiX } from "react-icons/hi";
 import NavLink from "./NavLink";
@@ -6,10 +6,25 @@ import MobileNavLink from "./MobileNavLink";
 
 function Navbar() {
   const [toggleNav, setToggleNav] = useState(false);
+  const [active, setActive] = useState(null);
+  
+  useEffect(() => {
+    const scrollActive = () => {
+      setActive(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", scrollActive);
+    return () => window.removeEventListener("scroll", scrollActive);
+  }, [active]);
 
   return (
-    <div className="w-full fixed top-0 left-0 z-2">
-      <div className="container mx-auto flex justify-between items-center py-4 px-2">
+    <div
+    className={`${
+      active ? "shadow-lg bg-background" : ""
+    } fixed w-full top-0 left-0 z-20`}
+        >
+      <div className={`${
+            active ? "py-2 transition-all duration-300" : "py-4"
+          } container  mx-auto flex items-center justify-between px-2`}>
         <div className="text-3xl cursor-pointer sm:hidden">
           <HiMenuAlt1 onClick={() => setToggleNav(true)} />
         </div>
