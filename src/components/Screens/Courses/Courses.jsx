@@ -2,8 +2,24 @@ import React from "react";
 import Categories from "./Categories";
 import { categories, courses } from "../../../data";
 import Course from "./Course";
+import { motion } from "framer-motion";
 
 function Courses() {
+  const container = {
+    hidden: {
+      opacity: 0,
+      scale: 0,
+    },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
   return (
     <div className="section" id="courses">
       <div className="text-center">
@@ -17,14 +33,19 @@ function Courses() {
           sit! Lorem ipsum dolor sit amet.
         </p>
       </div>
-      <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-8 mt-12">
+      <motion.div
+        variants={container}
+        initial="hidden"
+        whileInView="visible"
+        className="grid md:grid-cols-4 sm:grid-cols-2 gap-8 mt-12"
+      >
         {categories.map((category) => {
           return <Categories key={category.id} {...category} />;
         })}
-      </div>
+      </motion.div>
 
       <div className="text-xl font-bold mt-32">Kelas terpopuler</div>
-      <div className="mt-12 overflow-x-hidden w-full  relative">
+      <div className="mt-12 overflow-x-hidden w-full relative">
         <div className="flex gap-8 md:w-full sm:w-[170%] xs:w-[340%] w-[480%] animate-slide">
           {courses.map((course) => {
             return <Course key={course.id} {...course} />;
